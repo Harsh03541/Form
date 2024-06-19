@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Information Form</title>
+<style>
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    .heading{
+        font-size: 40px;
+    }
+</style>
+</head>
+<body>
+
+    <center>    
+    <form>
+        <table border="1px" cellspacing="0"> 
+            <tr>
+                <td colspan="2" class="heading">
+                    <b> User Form </b>
+                    
+            </td>
+        </tr>
+        <tr>
+            <th> <label for="name1"> Name: </label> </th>
+            <td><input type="text" name="name" id="name1"></td>
+        </tr>
+        <tr>
+            <th> <label for="mail"> Email: </label> </th>
+            <td><input type="email" name="email" id="mail"></td>
+        </tr>
+        <tr>
+            <th> <label for="contact"> Phone Number: </label> </th>
+            <td><input type="tel" name="phone" id="contact"></td>
+        </tr>
+        <tr>
+            <th> <label for="Age"> Age:</label></th>
+            <td><input type="number" name="age" min="18" max="100" id="Age"></td>
+        </tr>
+        <tr>
+            <th>  Gender:</th>
+            <td>
+                <input type="radio" name="gender" value="male" id="MALE"> 
+                <label for="MALE"> Male  </label>
+                <input type="radio" name="gender" value="female" id="f"> 
+                <label for="f"> Female </label>
+            </td>
+        </tr>
+        <tr>
+            <th>Interests:</th>
+            <td>
+                <input type="checkbox" name="interests" value="sports" id="s"> 
+                 <label for="s"> Sports </label>
+                <input type="checkbox" name="interests" value="music" id="m"> 
+                 <label for="m">Music </label>
+                <input type="checkbox" name="interests" value="movies" id="movie">
+                <label for="movie"> Movies </label>
+            </td>
+        </tr>
+        <tr>
+            <th>Country:</th>
+            <td>
+                <select name="country">
+                    <option value="Select">Select your country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Australia">Australia</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Submit">
+            </td>
+            <td>
+                <input type="submit" value="Reset">
+            </td>
+        </tr>
+    </table>
+    <br>
+</form>
+</center>
+</body>
+</html>
